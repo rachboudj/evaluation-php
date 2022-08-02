@@ -1,0 +1,12 @@
+{
+    "name": "rachidboudjakdji/evaluation-php-rachid",
+    "authors": [
+        {
+            "name": "Rachid Boujakdji",
+            "email": "rachidboudjakdji27@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
