@@ -1,0 +1,14 @@
+header {
+    width: 100%;
+    padding: 2em 0;
+    border-bottom: 1px solid #000;
+}
+
+header nav {
+    width: 60%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}

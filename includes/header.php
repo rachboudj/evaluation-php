@@ -9,6 +9,9 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            UnBlog
+        </div>
         <nav>
             <ul>
                 <li><a href="index.php?page=accueil">Accueil</a></li>
