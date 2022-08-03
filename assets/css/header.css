@@ -2,13 +2,25 @@ header {
     width: 100%;
     padding: 2em 0;
     border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 30%;
+    font-size: 2em;
+    font-weight: 900;
 }
 
 header nav {
     width: 60%;
+    display: flex;
+    justify-content: end;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
