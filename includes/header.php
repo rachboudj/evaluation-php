@@ -11,8 +11,8 @@
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Les articles</a></li>
                 <li><a href="#">Inscription</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
