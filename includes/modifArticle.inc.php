@@ -1,5 +1,4 @@
 <?php
-$success = false;
 $errors = array();
 if(!empty($_GET['articleId']) && is_numeric($_GET['articleId'])) {
     $id = $_GET['articleId'];
