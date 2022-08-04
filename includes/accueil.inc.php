@@ -2,7 +2,7 @@
 
 <?php 
 
-$sql = "SELECT * FROM articles WHERE status = 'publish' ORDER BY created_at LIMIT 10";
+$sql = "SELECT * FROM articles WHERE status = 'publish' ORDER BY created_at DESC LIMIT 10";
 $query = pdo()->prepare($sql);
 $query->execute();
 $articles = $query->fetchAll();
