@@ -34,7 +34,7 @@ $articles = $query->fetchAll();
                 <td><?= $article['status']; ?></td>
                 <td><a href="index.php?page=modifArticle&amp;id=<?= $article['id_article'] ?>">Éditer</a></td>
                 <td><a href="index.php?page=draftArticle&amp;id=<?= $article['id_article'] ?>">Mettre en brouillon</a></td>
-                <td><a href="index.php?page=draftArticle&amp;id=<?= $article['id_article'] ?>">Supprimer</a></td>
+                <td><a href="index.php?page=suppArticle&amp;id=<?= $article['id_article'] ?>">Supprimer</a></td>
             </tr>
         <?php } ?>
     </tbody>
