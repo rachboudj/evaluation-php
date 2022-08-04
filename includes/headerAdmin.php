@@ -16,6 +16,7 @@
             <ul>
                 <li><a href="index.php?page=accueil">Accueil</a></li>
                 <li><a href="index.php?page=articlesAdmin">Les articles</a></li>
+                <li><a href="index.php?page=newArticle">Ajouter un article</a></li>
                 <li><a href="index.php?page=utilisateurs">Les utilisateurs</a></li>
                 <li><a href="index.php?page=logout">Logout</a></li>
             </ul>
