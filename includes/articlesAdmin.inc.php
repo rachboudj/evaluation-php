@@ -32,8 +32,8 @@ $articles = $query->fetchAll();
                 <td><?= $article['created_at']; ?></td>
                 <td><?= $article['modified_at']; ?></td>
                 <td><?= $article['status']; ?></td>
-                <td><a href="index.php?page=modifArticle&amp;id=<?= $article['id_article'] ?>">Éditer</a></td>
-                <td><a href="index.php?page=draftArticle&amp;id=<?= $article['id_article'] ?>">Mettre en brouillon</a></td>
+                <td><a href="index.php?page=modifArticle&amp;articleId=<?= $article['id_article'] ?>">Éditer</a></td>
+                <td><a href="index.php?page=draftArticle&amp;articleId=<?= $article['id_article'] ?>">Mettre en brouillon</a></td>
                 <td><a href="index.php?page=supprimerArticle&amp;articleId=<?= $article['id_article'] ?>">Supprimer</a></td>
             </tr>
         <?php } ?>
