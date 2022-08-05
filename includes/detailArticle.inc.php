@@ -36,6 +36,7 @@ if(!empty($_POST['submitted'])) {
         $query->bindValue(':description',$description,PDO::PARAM_STR);
         $query->bindValue(':id_article',$id,PDO::PARAM_INT);
         $query->execute();
+        header('Location: index.php?page=detailArticle&id='.$id);
         // exit();
     }
 }
