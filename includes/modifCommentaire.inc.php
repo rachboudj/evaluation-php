@@ -19,7 +19,7 @@ if(!empty($_GET['articleId']) && is_numeric($_GET['articleId'])) {
         $errors = validationTexte($errors,$description,'description',10,1000);
         $errors = validationTexte($errors,$auteur,'auteur',3,100);
 
-        if(count($errors) === 0) 
+        if(count($errors) === 0 && verifierAdmin()) 
         {
             $sql = "UPDATE commentaires SET description= :description, auteur= :auteur, modified_at = NOW(),status= 'new' WHERE id_commentaire= :id_commentaire";
             $query = $pdo=pdo()->prepare($sql);
