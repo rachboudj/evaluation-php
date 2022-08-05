@@ -1,6 +1,6 @@
 <?php
 
-if (!empty($_GET['articleId']) && ctype_digit($_GET['articleId'])) 
+if (!empty($_GET['articleId']) && ctype_digit($_GET['articleId']) && verifierAdmin()) 
 {
     $id = $_GET['articleId'];
     if ($pdo = pdo()) {
