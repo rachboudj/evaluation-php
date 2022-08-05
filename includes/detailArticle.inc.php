@@ -70,7 +70,7 @@ if(!empty($_POST['submitted'])) {
                 <p>Auteur : <?= $commentaire['auteur']?></p>
                 <p>Content : <?= $commentaire['description']?></p>
                 <button class="btn-remove"><a href="index.php?page=supprimerCommentaire&amp;articleId=<?= $commentaire['id_commentaire'] ?>">Supprimer</a></button>
-                <button class="btn-remove"><a href="index.php?page=modifierCommentaire&amp;articleId=<?= $commentaire['id_commentaire'] ?>">Modifier</a></button>
+                <button class="btn-remove"><a href="index.php?page=modifCommentaire&amp;articleId=<?= $commentaire['id_commentaire'] ?>">Modifier</a></button>
             </div>
         <?php } ?>
     <?php } ?>
