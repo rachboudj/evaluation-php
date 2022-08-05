@@ -38,3 +38,16 @@ if(!empty($_GET['articleId']) && is_numeric($_GET['articleId'])) {
 }
 ?>
 
+<h1>Modifier le commentaire</h1>
+<form action="" method="post">
+
+    <label for="description">Contenu</label>
+    <textarea name="description" id="description" cols="30" rows="10"><?= getValue('description', $article['description']) ?></textarea>
+    <span class="error"><?php if (!empty($errors['description'])) {echo $errors['description'];} ?></span>
+
+    <label for="auteur">Auteur</label>
+    <input type="text" name="auteur" id="auteur" value="<?= getValue('auteur', $article['auteur']) ?>">
+    <span class="error"><?php if (!empty($errors['auteur'])) {echo $errors['auteur'];} ?></span>
+
+    <input type="submit" name="submitted" value="Modifier le commentaire">
+</form>
