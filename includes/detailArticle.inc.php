@@ -28,7 +28,7 @@ if(!empty($_POST['submitted'])) {
     $description = trim(strip_tags($_POST['description']));
     $errors = validationTexte($errors,$auteur,'auteur',3, 40);
     $errors = validationTexte($errors,$description,'description',3,2000);
-    if(count($errors) == 0) {
+    if(count($errors) == 0 && verifierAdmin()) {
         $sql = "INSERT INTO commentaires (id_article,description, auteur, created_at,modified_at,status)
             VALUES (:id_article,:description,:auteur,NOW(),NOW(),'new')";
         $query = $pdo=pdo()->prepare($sql);
@@ -38,6 +38,8 @@ if(!empty($_POST['submitted'])) {
         $query->execute();
         header('Location: index.php?page=detailArticle&id='.$id);
         // exit();
+    } else {
+        echo '<script>alert("Vous devez être iscrit en tant qu\'utilisateur pour ajouter un commentaire !");</script>';
     }
 }
 
