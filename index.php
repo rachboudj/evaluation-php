@@ -9,6 +9,8 @@ if (verifierAdmin())
     require_once './includes/headerAdmin.php';
 if (verifierModerateur()) 
     require_once './includes/headerModerateur.php';
+if (verifierRedacteur()) 
+    require_once './includes/headerRedacteur.php';
 else 
     require_once './includes/header.php';
 
