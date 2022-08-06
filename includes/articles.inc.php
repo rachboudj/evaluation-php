@@ -11,8 +11,6 @@ $articles = $query->fetchAll();
 
 <section id="articles">
     <hr>
-    <h2>Quelques articles</h2>
-    <p class="title">Mes derniers articles !</p>
     <div class="container-article">
         <?php foreach ($articles as $article) {
         ?>
