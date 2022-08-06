@@ -28,7 +28,7 @@ if(!empty($_POST['submitted'])) {
     $description = trim(strip_tags($_POST['description']));
     $errors = validationTexte($errors,$auteur,'auteur',1, 40);
     $errors = validationTexte($errors,$description,'description',1,2000);
-    if(count($errors) == 0 && verifierAdmin()) {
+    if(count($errors) == 0 && verifierAdmin() || verifierRedacteur() || verifierModerateur() || verifierUserInscrit()) {
         $sql = "INSERT INTO commentaires (id_article,description, auteur, created_at,modified_at,status)
             VALUES (:id_article,:description,:auteur,NOW(),NOW(),'new')";
         $query = $pdo=pdo()->prepare($sql);
