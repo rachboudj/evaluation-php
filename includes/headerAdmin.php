@@ -10,13 +10,14 @@
 <body>
     <header>
         <div class="logo">
-            UnBlog
+            UnBlog (administrateur)
         </div>
         <nav>
             <ul>
                 <li><a href="index.php?page=accueil">Accueil</a></li>
-                <li><a href="index.php?page=articlesAdmin">Les articles</a></li>
+                <li><a href="index.php?page=articles">Tous les articles</a></li>
                 <li><a href="index.php?page=newArticle">Ajouter un article</a></li>
+                <li><a href="index.php?page=articlesAdmin">Opérations articles</a></li>
                 <li><a href="index.php?page=utilisateur">Les utilisateurs</a></li>
                 <li><a href="index.php?page=logout">Logout</a></li>
             </ul>
