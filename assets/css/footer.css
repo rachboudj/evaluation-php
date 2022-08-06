@@ -1,11 +1,17 @@
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    align-self: center;
     width: 100%;
     padding: 4em 0;
     background-color: #000;
     color: #fff;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
+}
+
+footer a {
+    color: #fff;
 }
