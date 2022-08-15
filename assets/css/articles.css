@@ -13,12 +13,14 @@ section#articles hr {
 }
 
 section#articles h2 {
-    text-align: left;
+    text-align: center;
     margin-top: 1em;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 section#articles .title {
-    text-align: left;
+    text-align: center;
     margin-top: 0.5em;
     font-weight: 100;
     font-size: 1em;
@@ -63,4 +65,5 @@ section#articles .container-article .card-article .text-card button {
     margin-top: 1em;
     font-size: 0.8em;
     font-weight: 800;
+    background-color: transparent;
 }
