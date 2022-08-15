@@ -2,3 +2,17 @@
 @import url('./header.css');
 @import url('./main.css');
 @import url('./footer.css');
+@import url('./articlesAdmin.css');
+@import url('./articles.css');
+@import url('./detailArticle.css');
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 1em;
+}

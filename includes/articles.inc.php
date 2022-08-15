@@ -1,19 +1,16 @@
-<h1>Accueil</h1>
+<h1>Tous les articles</h1>
 
 <?php 
 
-$sql = "SELECT * FROM articles WHERE status = 'publish' ORDER BY created_at DESC LIMIT 10";
+$sql = "SELECT * FROM articles WHERE status = 'publish' ORDER BY created_at DESC";
 $query = pdo()->prepare($sql);
 $query->execute();
 $articles = $query->fetchAll();
 
 ?>
 
-
 <section id="articles">
     <hr>
-    <h2>Quelques articles</h2>
-    <p class="title">Mes derniers articles !</p>
     <div class="container-article">
         <?php foreach ($articles as $article) {
         ?>
