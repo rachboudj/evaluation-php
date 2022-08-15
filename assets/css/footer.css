@@ -8,8 +8,8 @@ footer {
     padding: 4em 0;
     background-color: #000;
     color: #fff;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
 }
 
 footer a {

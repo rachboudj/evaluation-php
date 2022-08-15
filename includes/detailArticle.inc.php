@@ -45,7 +45,8 @@ if(!empty($_POST['submitted'])) {
 
 ?>
 
-<div class="container">
+<section id="detail-article">
+    <div class="container-detail-article">
     <h2><?php echo ucfirst($article['titre']); ?></h2>
     <p><?php echo nl2br($article['description']); ?></p>
     <p>Date: <?php echo date('d/m/Y à H:i:s', strtotime($article['created_at'])); ?></p>
@@ -74,4 +75,5 @@ if(!empty($_POST['submitted'])) {
             </div>
         <?php } ?>
     <?php } ?>
-</div>
+    </div>
+</section>
